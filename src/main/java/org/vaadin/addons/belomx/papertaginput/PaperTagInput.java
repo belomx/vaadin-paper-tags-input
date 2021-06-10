@@ -15,7 +15,7 @@ import com.vaadin.flow.shared.Registration;
 import elemental.json.JsonValue;
 
 @Tag("paper-tags-input")
-@NpmPackage(value = "@belomx/paper-tags-input", version = "^3.1.7")
+@NpmPackage(value = "@belomx/paper-tags-input", version = "^3.1.9")
 @JsModule("@belomx/paper-tags-input/paper-tags-input.js")
 @JsModule("./styles/shared-styles.js")
 public class PaperTagInput extends AbstractSinglePropertyField<PaperTagInput, JsonValue> implements HasStyle, HasText, HasSize {    
@@ -24,6 +24,7 @@ public class PaperTagInput extends AbstractSinglePropertyField<PaperTagInput, Js
     
     public PaperTagInput() {
         super("tags", NOT_SET, true);
+        addTagsChangedEventListener(e -> {});
     }
 
     public void setPlaceholder (String placeholder) {

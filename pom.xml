@@ -6,7 +6,7 @@
 
     <groupId>org.vaadin.addons.belomx</groupId>
     <artifactId>vaadin-paper-tags-input</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.9</version>
     <packaging>jar</packaging>
 
     <name>paper-tags-input component</name>
